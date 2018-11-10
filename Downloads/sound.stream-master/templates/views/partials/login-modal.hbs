@@ -1,0 +1,38 @@
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h3 class="modal-title text-center" id="exampleModalLabel">Login</h3>
+			</div>
+			<br>
+			<div class="modal-body">
+				<div id="login-form">
+					<div class="input-group form-input">
+						<div class="input-group-addon input-icon">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<input type="text" class="form-control input-lg login-email" name="email" placeholder="email address">
+					</div>
+					<br>
+					<div class="input-group form-input">
+						<div class="input-group-addon input-icon">
+							<i class="fa fa-key" aria-hidden="true"></i>
+						</div>
+						<input type="password" class="form-control input-lg login-password" name="password" placeholder="password" type="password">
+					</div>
+					<br>
+	                <button onclick="login()" class="btn btn-primary btn-md col-md-12 form-btn" alight="right" align="middle">Login<span id="new-channel-title"></span></button>
+	        	</div>
+
+	            <div class="loader-div" id="login-loader" style="display: none;">
+	            	<div class="loader text-center"></div>
+	            	<br>
+	            	<h4 class="text-center">Logging In...</h4>
+	            </div>
+			</div>
+		</div>
+	</div>
+</div>

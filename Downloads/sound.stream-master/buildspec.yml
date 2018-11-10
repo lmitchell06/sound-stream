@@ -1,0 +1,8 @@
+version: 0.1
+phases:
+    build:
+      commands:
+        - npm install --production
+artifacts:
+  files:
+    - '**/*'

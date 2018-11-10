@@ -1,0 +1,5 @@
+language: node_js
+node_js:
+  - "stable"
+notifications:
+  slack: sepcrew:YmI9UrfHTGp8L1NyThsNx5yW

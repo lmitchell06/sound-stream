@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sound.stream</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="/public/styles/site.css" rel="stylesheet">
+    <script src="/public/js/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/public/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+    <script type="application/javascript" src="js/application.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div role="navigation" class="navbar-sunset">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+                    <a href="/" class="navbar-brand">sound.stream</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/keystone/signin">Sign In</a></li>
+                        <li><a href="/keystone/signup">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="body">
+
+        <div id="page-tag" page-name="channel"></div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for a channel" aria-label="Product name">
+                        <span class="input-group-btn">
+			    	<button class="btn btn-secondary" type="button"><img src="/icons/Black/magnifying-glass.svg" alt="Go"  height="20" width="20"></button>
+			    </span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="channel-name">#Bacharach</h1>
+                </div>
+                <div class="col-md-4">
+                    <img id="open-suggest-track-modal" src="/icons/White/music-player.svg" alt="Suggest" align="right" height="45" width="45">
+                </div>
+            </div>
+        </div>
+        <div class="main-holder">
+            <div class="container-fluid top-section">
+                <div class="row">
+                    <div class="image-holder col-lg-3 col-md-3">
+                        <img class="track-image" src="/public/images/test-img.jpg">
+                    </div>
+                    <div class="information-holder col-lg-9 col-md-9">
+                        <h1>Dione Warwicrtet et eg erg ejvhoe goerogoerhg gggggg</h1>
+                        <h4>0:00/440000</h4>
+                        <div class="buttons-holder">
+                            <button class="share-button"><img src="/public/icons/White/share.svg"></button>
+                            <button class="mute-button"><img src="/public/icons/White/mute.svg"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="channel-queue">
+                <div class="track">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>What The World Needs Now Is Love / Dionne Warwick</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4 class="duration">190000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Aretha Franklin - I say a little prayer ( Official song ) HQ version , Photos / Photoshoots</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>214000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Dionne Warwick &quot;I&#x27;ll Never Love This Way Again&quot; (ORIGINAL)</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>210000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>I&#x27;ll never fall in love again - Dionne Warwick</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>182000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Aretha Franklin - I Say A Little Prayer</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>246000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Burt Bacharach - Alfie Amazing version</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>229000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Burt Bacharach - That&#x27;s What Friends Are For (Glastonbury 2015)</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>277000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Burt Bacharach - Raindrops Keep Falling On My Head</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>184000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Rhythm and Voices - I Say a Little Prayer for You</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>164000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Dionne Warwick - Never Gonna Give You Up Duet with Barry White</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>237000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Diana Krall - The Look of Love - Burt Bacharach &amp; Hal David tribute</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>278000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>Singer Presents Burt Bacharach with Barbra Streisand</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>504000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4>The Carpenters Burt Bacharach Medley.wmv</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>881000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5">
+                                <h4></h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>186000</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <h4>0</h4>
+                                <button class="like-button"><img src="/public/icons/White/like.svg"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+<div style="position:relative;width:267px;height:25px;overflow:hidden;">
+	<div style="position:absolute;top:-276px;left:-5px">
+		<iframe id="ytplayer" type="text/html" width="300" height="24"
+	  src="https://www.youtube.com/embed/GqVx_2d4v4U?autoplay=1&rel=0&autohide=0&#8243;"
+	  frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+-->
+
+        <div style="position:relative;width:0px;height:0px;overflow:hidden;" id="player" data-id="GqVx_2d4v4U" data-slug="bacharach-2" hidden></div>
+
+        <div class="modal fade" id="suggest-track-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">&times;</span>
+	        	</button>
+                        <h5 class="modal-title" id="exampleModalLabel">Suggest Track</h5>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <div class="container col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"><b>@</b></span>
+                                <input id="create-track-text-input" type="text" class="form-control" placeholder="new track">
+                            </div>
+                            <p id="suggest-track-warning-text">Please enter a URL</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="suggest-track-submit" disabled="true">Suggest Track</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="search-channels-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">&times;</span>
+	        	</button>
+                        <h5 class="modal-title" id="exampleModalLabel">Search Channels</h5>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <div class="container col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1"><b>#</b></span>
+                                <input id="search-channels-name-text-input" type="text" class="form-control" placeholder="channel name" autocomplete="off">
+                            </div>
+                            <br>
+                            <p id="search-min-length-warning-text">Please enter at least <span id="search-min-length-number">3</span> more character(s)</p>
+                            <p id="results-info" style="display: none;">Displaying <span id="search-display-number"></span> of <span id="search-query-number">0</span> result(s) for "<span id="search-term"></span>"</p>
+                            <ul id="results-list">
+                            </ul>
+                            <br>
+                            <div class="input-group" style="display: none;" id="create-channel-track-text-input-group">
+                                <span class="input-group-addon" id="basic-addon1"><b>@</b></span>
+                                <input id="create-channel-track-text-input" type="text" class="form-control" placeholder="first track">
+                            </div>
+                            <p id="field-empty-warning-text" style="display: none;">Please specify first track to create channel</p>
+                            <p id="video-not-found-text" style="color:red; display: none;">Error: Video Not Found, please enter a different URL</p>
+                            <br>
+                            <button id="create-channel-submit-button" style="display:none" disabled="true">Create #<span id="new-channel-title"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="playControls">
+    </div>
+    <br>
+
+
+</body>
+
+</html>

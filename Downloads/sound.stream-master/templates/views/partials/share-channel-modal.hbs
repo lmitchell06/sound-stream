@@ -1,0 +1,51 @@
+<!-- Modal -->
+<div class="modal fade" id="share-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title text-center">Share Channel</h3>
+            </div>
+            <div class="modal-body">
+                <div class="input-group form-input">
+                    <input type="text" readonly="readonly" class="form-control input-lg" id="channel-url-input">
+                    <span class="input-group-btn">
+                        <button class="btn input-lg form-btn-sm" type="button" id="copy-button" data-clipboard-action="copy" data-clipboard-target="#channel-url-input">Copy link</button>
+                    </span>
+                </div>
+                <br>
+                <h3 class="text-center">Share to...</h3>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <a href="mailto:?Subject=Sound.Stream has new music for you!  &amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 www.sound.stream">
+                            <span class="social-icon">
+                                <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="https://plus.google.com/share?url=https://www.sound.stream" target="_blank">
+                            <span class="social-icon">
+                                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="http://www.facebook.com/sharer.php?u={{url}}" target="_blank" >
+                            <span class="social-icon">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="https://twitter.com/share?url={{url}}&amp;text=Check%20out%20this%20SoundStream%20channel%20&amp;hashtags={{data.slug}}" target="_blank">
+                            <span class="social-icon">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        

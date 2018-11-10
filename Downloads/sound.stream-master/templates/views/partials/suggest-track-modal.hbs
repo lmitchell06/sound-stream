@@ -1,0 +1,35 @@
+<div class="modal fade" id="suggest-track-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+	     	<div class="modal-header">
+	      		<button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">&times;</span>
+	        	</button>
+	        	<h3 class="modal-title text-center" id="exampleModalLabel">Suggest Track</h3>
+	      	</div>
+      		<br>
+      		<div class="modal-body">
+        		<div class="container col-md-12">
+        			<div id="suggest-track-form">
+						<div class="input-group form-input">
+							<div class="input-group-addon input-icon">
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</div>
+							<input id="create-track-text-input" type="text" class="form-control input-lg" placeholder="https://www.youtube.com/">
+						</div>
+						<p id="suggest-track-warning-text">Please specify first track to create channel</p>
+						<p id="video-not-found-text" style="color:red; display: none;">Error: Video Not Found, please enter a different URL</p>
+						<br>
+	                    <button id="suggest-track-submit" class="btn btn-primary btn-md col-md-12 form-btn" disabled="true" alight="right" align="middle">Suggest Track<span id="new-channel-title"></span></button>
+                	</div>
+
+                    <div class="loader-div" id="suggest-track-loader" style="display: none;">
+                    	<div class="loader text-center"></div>
+                    	<br>
+                    	<h4 class="text-center">Suggesting Track...</h4>
+                    </div>
+				</div>
+			</div>
+    	</div>
+  	</div>
+</div>

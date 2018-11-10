@@ -1,0 +1,81 @@
+{{!< default}}
+<div id="page-tag" page-name="404">
+</div>
+<br>
+<br>
+<div class="container text-center" style="color: white;">
+    <h1>Sorry, we couldn't find the page you were looking for...</h1>
+</div>
+<br>
+<div class="container text-center" style="color: white;">
+    <h2>... so here's <b>Human Music</b></h2>
+</div>
+<br>
+<br>
+<div class="main-holder">
+    <div class="container-fluid top-section">
+        <div class="row">
+            <div class="image-holder col-lg-3 col-md-3">
+                <img class="track-image" src="/images/test-img.jpg">
+            </div>
+            <div class="information-holder col-lg-9 col-md-9">
+                <h1 class="current-track-title">404 - Human Music</h1>
+                <br>
+                <div class="buttons-holder">
+                    <button class="share-button" id="open-share-channel-modal" data-toggle="modal" data-target="#myModal"><img src="/icons/White/share.svg"></button>
+                    <button class="mute-button"><img id="mute-button" src="/icons/White/volume.svg"></button>
+                    <input id="volume-slider" type="range" min="0" max="100" value="100"/>
+                </div>
+                <br>
+                <div id="progress-div">
+                    <div id="progress-bar">
+                    </div>
+                </div>
+                <h3 style="color: white;">&#8734;/&#8734;</h3>
+            </div>
+        </div>
+    </div>
+    <div class="channel-queue">
+        <div class="track">
+            <div class="container-fluid">
+                <div class="row header">
+                    <div class="col-xl-1 col-lg-1 col-md-1">
+                        <h4><b>Position</b></h4>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <h4><b>Title</b></h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3">
+                        <h4 class="duration"><b>Duration</b></h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3">
+                        <h4 class="track-likes"><b>Likes</b></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-1 col-lg-1 col-md-1">
+                        <h4>#1</h4>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <h4>404 - Human Music</h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3">
+                        <h4 class="duration">&#8734;</h4>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3">
+                        <h4 class="track-likes">&#8734;</h4>
+                        <button class="like-button">
+                            <img src="{{echoLikeImage hasLiked}}" class="like-img">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> share-channel-modal }}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OB2ekdVqPnk?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" style="display: none;" frameborder="0" allowfullscreen></iframe>

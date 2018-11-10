@@ -1,0 +1,45 @@
+<div class="modal fade" id="search-channels-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+	     	<div class="modal-header">
+	      		<button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">&times;</span>
+	        	</button>
+	        	<h3 class="modal-title text-center">Look for a Channel</h3>
+	      	</div>
+      		<br>
+      		<div class="modal-body">
+        		<div class="container col-md-12">
+                    <div id="input-channel-details-div">
+			    	<div class="input-group">
+			    		<div class="input-group-addon input-icon">
+			    			<i class="fa fa-hashtag" aria-hidden="true"></i>
+			    		</div>
+						<input id="search-channels-name-text-input" type="text" class="form-control input-lg" placeholder="channel name" autocomplete="off">
+					</div>
+					<br>
+					<p id="search-min-length-warning-text">Please enter at least <span id="search-min-length-number">3</span> or more character(s)</p>
+					<p id="results-info" style="display: none;">Displaying <span id="search-display-number"></span> of <span id="search-query-number">0</span> result(s) for "<span id="search-term"></span>"</p>
+					<ul id="results-list"></ul>
+					<br>
+					<div class="input-group form-input" style="display: none;" id="create-channel-track-text-input-group">
+						<div class="input-group-addon input-icon">
+							<i class="fa fa-youtube-play" aria-hidden="true"></i>
+						</div>
+						<input id="create-channel-track-text-input" type="text" class="form-control input-lg" placeholder="https://www.youtube.com/">
+					</div>
+					<p id="field-empty-warning-text" style="display: none;">Please specify first track to create channel</p>
+					<p id="video-not-found-text" style="color:red; display: none;">Error: Video Not Found, please enter a different URL</p>
+					<br>
+                    <button id="create-channel-submit-button" class="btn btn-primary btn-md col-md-12 form-btn" disabled="true" alight="right" align="middle">Create #<span id="new-channel-title"></span></button>
+                    </div>
+                     <div class="loader-div" id="suggest-channel-loader" style="display: none;">
+                    	<div class="loader text-center"></div>
+                    	<br>
+                    	<h4 class="text-center" id="progress-message">Creating Track...</h4>
+                    </div>
+                </div>
+			</div>
+    	</div>
+  	</div>
+</div>

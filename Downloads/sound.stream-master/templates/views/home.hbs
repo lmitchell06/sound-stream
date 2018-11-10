@@ -1,0 +1,55 @@
+{{!< default}}
+<div id="page-tag" page-name="home"></div>
+<div class="container">
+	<div class="col-md-12 white-text">
+		<h1 class="banner-text">Welcome to Sound.Stream</h1>
+		<h1>Music for the people</h1>
+	</div>
+</div>
+<br>
+<br>
+<div class="container text-center">
+		<input id="home-search-channels-name-text-input" type="text" class="form-control input-lg" placeholder="Search channels (e.g. human-music)" autocomplete="off">
+		<br>
+		<h3 id="no-results-warning" style="display: none;">No results</h3>
+		<br>
+		<ul id="home-results-list"></ul>
+</div>
+<br>
+<br>
+<div class="container">
+	<div class="song-box-home">
+		<h2>What's Trending Now</h2>
+		<br>
+		<div class="row">
+			{{#each trending}}
+				<a href="/{{slug}}" class="col-md-3">
+					<div class="channel-box">
+						<img src="{{currentTrack.thumbnail}}" class="channel-image">
+						<div class="channel-name-container">
+							<h3 class="channel-name">#{{title}}</h3>
+						</div>
+					</div>
+				</a>
+			{{/each}}
+		</div>
+	</div>
+	<br>
+	<div class="song-box-home">
+		<h2>Recently Added</h2>
+		<br>
+		<div class="row">
+			{{#each recent}}
+				<a href="/{{slug}}" class="col-md-3">
+					<div class="channel-box">
+						<img src="{{currentTrack.thumbnail}}" class="channel-image">
+						<div class="channel-name-container">
+							<h3 class="channel-name">#{{title}}</h3>
+						</div>
+					</div>
+				</a>
+			{{/each}}
+		</div>
+	</div>
+</div>
+<br>

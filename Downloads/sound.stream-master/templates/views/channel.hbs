@@ -1,0 +1,101 @@
+{{!< default}} 
+<div id="page-tag" page-name="channel">
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary btn-lg channel-name pull-left" id="open-search-channels-modal">
+                    <i class="fa fa-search" aria-hidden="true"></i> Search Channels
+                </button>
+            </div>
+            <div class="col-md-4">
+                <h1 class="channel-name">#{{data.title}}</h1>
+            </div>
+            <div class="col-md-4">
+                <button id="open-suggest-track-modal" class="btn btn-primary btn-lg channel-name pull-right">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add Track
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="main-holder">
+        <div class="container-fluid top-section">
+            <div class="row">
+                <div class="image-holder col-lg-3 col-md-3">
+                    <img class="track-image" src="{{data.currentTrack.thumbnail}}">
+                </div>
+                <div class="information-holder col-lg-9 col-md-9">
+                    <h1 class="current-track-title">{{data.currentTrack.title}}</h1>
+                    <br>
+                    <div class="buttons-holder">
+                        <button class="share-button" id="open-share-channel-modal" data-toggle="modal" data-target="#myModal"><img src="/icons/White/share.svg"></button>
+                        <button class="mute-button"><img id="mute-button" src="/icons/White/volume.svg"></button>
+                        <input id="volume-slider" type="range" min="0" max="100" value="100"/>
+                    </div>
+                    <br>
+                    <div id="progress-div">
+                        <div id="progress-bar">
+                            {{!-- <img src="/images/play.svg"> --}}
+                        </div>
+                    </div>
+                    <h4 class="current-time"><span class="current">0:00</span>/<span class="total">{{data.currentTrack.duration}}</span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="channel-queue">
+            <div class="track">
+                <div class="container-fluid">
+                    <div class="row header">
+                        <div class="col-xl-1 col-lg-1 col-md-1">
+                            <h4><b>Position</b></h4>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5">
+                            <h4><b>Title</b></h4>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3">
+                            <h4 class="duration"><b>Duration</b></h4>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3">
+                            <h4 class="track-likes"><b>Likes</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid queue-holder">
+                    {{#each data.queue}}
+                    <div class="row {{_id}}">
+                        <div class="col-xl-1 col-lg-1 col-md-1">
+                            <h4>{{position}}</h4>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5">
+                            <h4>{{title}}</h4>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3">
+                            <h4 class="duration">{{echoDuration duration}}</h4>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3">
+                            <h4 class="track-likes">{{likes}}</h4>
+                            <button class="like-button" onclick="like('{{_id}}')">
+                                <img src="{{echoLikeImage hasLiked}}" class="like-img">
+                            </button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+<div style="position:relative;width:267px;height:25px;overflow:hidden;">
+	<div style="position:absolute;top:-276px;left:-5px">
+		<iframe id="ytplayer" type="text/html" width="300" height="24"
+	  src="https://www.youtube.com/embed/{{trackId}}?autoplay=1&rel=0&autohide=0&#8243;"
+	  frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+-->
+
+    <div style="position:relative;width:0px;height:0px;overflow:hidden;" id="player" data-id="{{trackId}}" data-slug="{{data.slug}}" hidden></div>
+
+    {{> suggest-track-modal }} {{> search-channels-modal }} {{> share-channel-modal }}
